@@ -11,7 +11,7 @@ var configData = require("./config/connection");
 var indexRouter = require("./routes/index");
 
 async function getApp() {
-
+  // Adding LM Comment and committing
   // Database
   var connectionInfo = await configData.getConnectionInfo();
   mongoose.connect(connectionInfo.DATABASE_URL);
